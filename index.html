@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in to Hard Rock Bet</title>
+<style>
+  :root { color-scheme: light; --ink:#14110f; --muted:#6c6762; --line:#e5e1dc; --accent:#3b1491; --accent-2:#5a22d6; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:17px/1.45 -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
+         color:var(--ink); background:#fff; min-height:100vh; display:flex; flex-direction:column; }
+  header { background:linear-gradient(160deg,#2a0d6b,#4a1bb8); padding:34px 24px 26px; text-align:center; color:#fff; }
+  header img { width:132px; height:auto; border-radius:14px; display:block; margin:0 auto 14px; }
+  header h1 { margin:0; font-size:24px; font-weight:700; letter-spacing:.2px; }
+  header p { margin:6px 0 0; font-size:14px; opacity:.85; }
+  main { flex:1; padding:28px 22px 34px; max-width:480px; width:100%; margin:0 auto; }
+  label { display:block; font-size:13px; color:var(--muted); margin:0 0 6px; }
+  .field { border:1px solid var(--line); border-radius:12px; padding:14px 14px; font-size:17px; width:100%; margin-bottom:18px; background:#faf9f8; color:var(--ink); }
+  button { width:100%; border:0; border-radius:14px; padding:16px; font-size:18px; font-weight:600; color:#fff;
+           background:var(--accent-2); cursor:pointer; }
+  button:active { background:var(--accent); }
+  .note { margin-top:18px; font-size:13px; color:var(--muted); text-align:center; }
+  .lock { font-size:13px; color:var(--muted); text-align:center; margin:0 0 22px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="hrd-logo.png" alt="Hard Rock Digital">
+  <h1>Sign in to Hard Rock Bet</h1>
+  <p>Secure sign-in</p>
+</header>
+<main>
+  <p class="lock">🔒 You are signing in to confirm your identity in Messages.</p>
+  <label for="u">Email or username</label>
+  <input class="field" id="u" value="player@example.com" autocomplete="off" readonly>
+  <label for="p">Password</label>
+  <input class="field" id="p" type="password" value="••••••••••" autocomplete="off" readonly>
+  <button id="signin" type="button" onclick="location.href='success.html'">Sign in</button>
+  <p class="note">Demonstration page for a Messages for Business review. No account is used and nothing is stored.</p>
+</main>
+</body>
+</html>
